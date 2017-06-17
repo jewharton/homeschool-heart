@@ -376,6 +376,6 @@ div[class=loginbutton] a {
     }
     
     #headerversebox {
-        padding-left: auto !important;
+        padding-left: 0px !important;
     }
 }
