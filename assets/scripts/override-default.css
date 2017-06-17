@@ -1,0 +1,132 @@
+/* add !important after every attribute lol */
+/* override the /SYSTEM/ */
+
+div .header {
+    width: auto !important;
+    height: auto !important;
+}
+
+div.container.box {
+    max-width: 953px !important;
+    width: 100% !important;
+    -webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+}
+
+div.equal {
+    width: 100% !important;
+}
+
+div.page.nmenu-page {
+    width: 100% !important;
+    display: block !important;
+}
+
+div.pagecontent.clearfix {
+    overflow: hidden;
+}
+
+div.pagecontent.clearfix div.content {
+    overflow: auto;
+}
+
+
+div#meta {
+    width: 100% !important;
+}
+
+footer.clearfix {
+    width: 100% !important;
+}
+
+div .nivoSlider img {
+    /*width: 100% !important;*/
+    height: auto !important;
+}
+
+.nivo-box, .nivo-slice {
+    height: 100% !important;
+    /*width: auto !important;*/
+}
+
+div .nivo-caption {
+    display: none !important;
+}
+
+div .nivo-controlNav {
+    top: auto !important;
+    bottom: 3px !important;
+    left: auto !important;
+    right: 10% !important;
+    margin-left: 0px !important;
+}
+
+div .nivoSlider {
+    left: 0 !important;
+    right: 0 !important;
+}
+
+div.page {
+    display: block !important;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#33799c+0,bad6f4+100 */
+	background: #33799c; /* Old browsers */
+	background: -moz-linear-gradient(top, #33799c 0%, #bad6f4 100%) !important; /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #33799c 0%,#bad6f4 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #33799c 0%,#bad6f4 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33799c', endColorstr='#bad6f4',GradientType=0 ) !important; /* IE6-9 */
+}
+
+div div#loginBox {
+    z-index: 200000999 !important; /*Maximum lels*/
+    white-space: normal !important;
+    line-height: normal !important;
+    font-size: 12px !important;
+    right: 0px !important;
+    top: auto !important;
+    
+    border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    padding: 0px !important;
+}
+
+div#loginBox form#loginForm.clearfix {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#52789e+0,2d3f51+90,6d85a0+100 */
+	background: #52789e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #52789e 0%, #2d3f51 90%, #6d85a0 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #52789e 0%,#2d3f51 90%,#6d85a0 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #52789e 0%,#2d3f51 90%,#6d85a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52789e', endColorstr='#6d85a0',GradientType=0 ); /* IE6-9 */
+}
+
+div a.forgotLink.clearfix, form div.clearfix p a {
+    font-family: inherit !important;
+    font-size: inherit !important;
+    text-decoration: underline;
+}
+
+img#loginArrow {
+    display: none !important;
+}
+
+footer.clearfix {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#52789e+0,2d3f51+90,6d85a0+100 */
+	background: #52789e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #52789e 0%, #2d3f51 90%, #6d85a0 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #52789e 0%,#2d3f51 90%,#6d85a0 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #52789e 0%,#2d3f51 90%,#6d85a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52789e', endColorstr='#6d85a0',GradientType=0 ); /* IE6-9 */
+    
+    margin-bottom: 0px !important;
+    padding-bottom: 20px !important;
+    padding-top: 10px !important;
+}
+
+footer.clearfix div ul li a, footer.clearfix div p, footer.clearfix div p span span, footer.clearfix div p a {
+    font-family: Merriweather !important;
+    color: #eaf2f9 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+}
