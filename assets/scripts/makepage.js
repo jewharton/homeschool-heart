@@ -18,15 +18,15 @@ $(document).ready(function() {
 		var heartribbon = $('#heartribbon');
 		
 		/* Make the actual ribbon */
-		heartribbon.append('<img id="ribbon1" src="https://cdn.rawgit.com/xaresys/homeschool-heart/master/assets/logo%20ribbon%201%20small.png"></img>');
-		heartribbon.append('<img id="ribbon2" src="https://cdn.rawgit.com/xaresys/homeschool-heart/master/assets/logo%20ribbon%202%20small.png"></img>');
+		heartribbon.append('<img id="ribbon1" src="https://rawgit.com/xaresys/homeschool-heart/master/assets/logo%20ribbon%201%20small.png"></img>');
+		heartribbon.append('<img id="ribbon2" src="https://rawgit.com/xaresys/homeschool-heart/master/assets/logo%20ribbon%202%20small.png"></img>');
 		metacontainer.append('<a class="metaitem" id="ribbon_placeholder"></li>');
 		
 		/* Make the mobile ribbon */
 		newmeta.before('<div id="mobile_ribbon"></div>');
 		var mobileribbon = $("#mobile_ribbon");
 		mobileribbon.append('<div class="ribbonblue" id="rbleft"></div>');
-		mobileribbon.append('<img id="mobilelogo" src="https://cdn.rawgit.com/xaresys/homeschool-heart/master/assets/mini%20logo.png"></img>');
+		mobileribbon.append('<img id="mobilelogo" src="https://rawgit.com/xaresys/homeschool-heart/master/assets/mini%20logo.png"></img>');
 		mobileribbon.append('<div class="ribbonblue" id="rbright"></div>');
 		
 		/* Make the items. Hooray! */
