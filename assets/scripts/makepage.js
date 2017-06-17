@@ -83,7 +83,17 @@ $(document).ready(function() {
 				if (linkwords.includes("Home") === true) {
 					ishome = true;
 				};
-				linkwords = linkwords.replace(" » "," ▼");
+				//linkwords = linkwords.replace(" » "," ▼");
+				/* Above code doesn't seem to work in production. Let's try something else...*/
+				/*See if has any children */
+				linkwords = linkwords.replace(" » ","");
+				var haslistchild = false;
+				$(this).parent().children('ul').each(function () {
+					haschildlist = true;
+				});
+				if (haschildlist === true) {
+					linkwords = linkwords+" ▼";
+				}
 			});
 			if (ishome === true) {return true;};
 			
