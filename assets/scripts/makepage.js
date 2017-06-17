@@ -89,9 +89,9 @@ $(document).ready(function() {
 				linkwords = linkwords.replace(" » ","");
 				var haslistchild = false;
 				$(this).parent().children('ul').each(function () {
-					haschildlist = true;
+					haslistchild = true;
 				});
-				if (haschildlist === true) {
+				if (haslistchild === true) {
 					linkwords = linkwords+" ▼";
 				}
 			});
