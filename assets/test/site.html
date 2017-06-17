@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+
+@font-face {
+  font-family: 'Merriweather';
+  /*font-style: normal;*/
+  /*font-weight: Bold;*/
+  src: url(https://raw.githubusercontent.com/xaresys/xaresys.github.io/master/Merriweather-Bold.ttf);
+}
+
+body {margin: 0;}
+
+/* ------------------------------------------------*/
+
+[id=new_metabar] {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#acc7e4+0,eaf2f9+90,acc7e4+100 */
+	background: #acc7e4; /* Old browsers */
+	background: -moz-linear-gradient(top, #acc7e4 0%, #eaf2f9 90%, #acc7e4 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #acc7e4 0%,#eaf2f9 90%,#acc7e4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #acc7e4 0%,#eaf2f9 90%,#acc7e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#acc7e4', endColorstr='#eaf2f9',GradientType=0 ); /* IE6-9 */
+}
+
+/* New metabar ------------------------------------------------------------------------------------- */
+
+/* The actual bar */
+div[id=new_metabar] {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    height: auto;
+    width: 100%;
+    display:block;
+    line-height: 50px;
+    overflow:hidden;
+}
+
+/* The thing that contains the items */
+ul[id=meta_container] {
+	margin: 0 auto;
+    padding: inherit;
+    max-width: 953px;
+    /*min-width: 534px;*/
+    height: inherit;
+    line-height: inherit;
+    overflow:hidden;
+}
+
+/* List items, not login button */
+[class=metaitem] {
+    display: inline-block;
+    text-align: center;
+    padding: 3px 2%;
+    text-decoration: none;
+    float: left;
+    
+    font-family: Merriweather;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(48, 117, 191, 0.3);
+    /*height: inherit;*/
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#acc7e4+0,eaf2f9+90,acc7e4+100 */
+	background: #acc7e4; /* Old browsers */
+	background: -moz-linear-gradient(top, #acc7e4 0%, #eaf2f9 90%, #acc7e4 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #acc7e4 0%,#eaf2f9 90%,#acc7e4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #acc7e4 0%,#eaf2f9 90%,#acc7e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#acc7e4', endColorstr='#eaf2f9',GradientType=0 ); /* IE6-9 */
+    
+	text-shadow: 1px 1px 2px rgba(255,255,255,1);
+    color: #3b6fa3;
+    /*color: #ffffff;*/
+}
+
+[class=metaitem]:active {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#acc7e4+0,75a1d2+10,acc7e4+100 */
+	background: #acc7e4; /* Old browsers */
+	background: -moz-linear-gradient(top, #acc7e4 0%, #75a1d2 10%, #acc7e4 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #acc7e4 0%,#75a1d2 10%,#acc7e4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #acc7e4 0%,#75a1d2 10%,#acc7e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75a1d2', endColorstr='#acc7e4',GradientType=0 ); /* IE6-9 */
+    
+    
+}
+
+[class=metaitem]:hover {
+	background: #acc7e4;
+}
+
+/* Login button --------------------------------------------------------------- */
+
+[class=loginbutton] {
+    display: inline-block;
+    /*text-align: center;
+    padding: 3px 2%;
+    text-decoration: none;*/
+    float: right;
+    
+    font-family: Merriweather;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    border-right: 2px solid rgba(48, 117, 191, 0.2);
+    vertical-align: middle;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#acc7e4+0,75a1d2+90,acc7e4+100 */
+	background: #acc7e4; /* Old browsers */
+	background: -moz-linear-gradient(top, #acc7e4 0%, #75a1d2 90%, #acc7e4 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #acc7e4 0%,#75a1d2 90%,#acc7e4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #acc7e4 0%,#75a1d2 90%,#acc7e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#acc7e4', endColorstr='#75a1d2',GradientType=0 ); /* IE6-9 */
+    
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    color: #ffffff;
+}
+
+[class=loginbutton]:active {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#75a1d2+0,1a71ce+10,75a1d2+100 */
+	background: #75a1d2; /* Old browsers */
+	background: -moz-linear-gradient(top, #75a1d2 0%, #1a71ce 10%, #75a1d2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #75a1d2 0%,#1a71ce 10%,#75a1d2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #75a1d2 0%,#1a71ce 10%,#75a1d2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1A71CE', endColorstr='#75a1d2',GradientType=0 ); /* IE6-9 */
+}
+
+[class=loginbutton]:hover {
+	background: #75a1d2;
+}
+
+a[class=metaitem], a[class=loginbutton] {
+	text-decoration: none;
+}
+/* Ribbons ------------------------------------------------------------------------------*/
+
+/* The HEART logo ribbon */
+[id=heartribbon] {
+    display: inline-block;
+    float: left;
+    z-index: 1;
+    width: 184px;
+    height: 169px;
+    position: absolute;
+}
+
+[id="ribbon1"] {
+	position: absolute;
+    z-index: 2;
+    -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.2));
+    filter:         drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.2)); 
+}
+
+[id="ribbon2"] {
+	position: absolute;
+    -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.2));
+    filter:         drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.2)); 
+}
+
+[id="ribbon_placeholder"] {
+	margin: 0;
+    padding: 1px;
+    width: 184px;
+    float: left;
+    border-left: 0;
+    border-right: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------------------------------------------*/
+
+/* Mobile ribbon banner */
+
+[id="mobile_ribbon"] {
+	height: 58px;
+    width: 100%;
+    display: none;
+    text-align: center;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-	editor/#e1e4ed+0,ffffff+25,ffffff+75,e1e4ed+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #e1e4ed 0%, #ffffff 25%, #ffffff 75%, #e1e4ed 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #e1e4ed 0%,#ffffff 25%,#ffffff 75%,#e1e4ed 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #e1e4ed 0%,#ffffff 25%,#ffffff 75%,#e1e4ed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e4ed',GradientType=0 ); /* IE6-9 */
+}
+
+[class="ribbonblue"] {
+	width: 12px;
+    height: inherit;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b6fa3+0,75a1d2+25,75a1d2+75,3b6fa3+100 */
+	background: #75a1d2; /* Old browsers */
+	background: -moz-linear-gradient(top, #3b6fa3 0%, #75a1d2 25%, #75a1d2 75%, #3b6fa3 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #3b6fa3 0%,#75a1d2 25%,#75a1d2 75%,#3b6fa3 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #3b6fa3 0%,#75a1d2 25%,#75a1d2 75%,#3b6fa3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75a1d2', endColorstr='#3b6fa3',GradientType=0 ); /* IE6-9 */
+}
+
+[id="rbleft"] {
+	float: left;
+}
+
+[id="rbright"] {
+	float: right;
+}
+
+/* Navigation bar --------------------------------------- */
+
+[id="navbar"] {
+	display:block;
+    text-align:center;
+    /*height: 20px;*/
+    height: auto;
+    /* Permalink - use to edit and share this gradient: 	http://colorzilla.com/gradient-editor/#1e1e1e+0,4b4b4b+100 */
+	background: #1e1e1e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1e1e1e 0%, #4b4b4b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #1e1e1e 0%,#4b4b4b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #1e1e1e 0%,#4b4b4b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#4b4b4b',GradientType=0 ); /* IE6-9 */
+
+}
+
+[id="navbar_inner"] {
+    width: 100%;
+    height: auto;
+	max-width: 953px;
+    padding-left: 184px;
+    display: table;
+    table-layout: fixed;
+    
+    box-sizing: border-box; /* Opera */
+  	-moz-box-sizing: border-box; /* Firefox */
+  	-webkit-box-sizing: border-box; /* Regular */
+}
+
+[class="navbar_item"] {
+	display: table-cell;
+	text-decoration: none;
+    color: #ffffff;
+    /*padding: 5px 5px;*/
+    font-family: Merriweather;
+    font-size: 0.8em;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    vertical-align: middle;
+    /*line-height: 0.8;*/
+    white-space: nowrap;
+}
+
+[class="navbar_item"] a {
+	text-decoration: none;
+    padding: 3px 0px;
+    color: inherit;
+    width: 100%;
+    display: block;
+}
+
+/* Navbar list */
+[class="navbar_item"] ul {
+	background: #4b4b4b;
+	list-style: none;
+    position: absolute;
+    padding: 0;
+    vertical-align: center;
+    margin: 0px 0px;
+    margin-left: -1px;
+    display: none;
+    
+    /* Permalink - use to edit and share this gradient: 	http://colorzilla.com/gradient-editor/#1e1e1e+0,4b4b4b+100 */
+	background: #4b4b4b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4b4b4b 0%, #1e1e1e 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #4b4b4b 0%,#1e1e1e 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #4b4b4b 0%,#1e1e1e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b4b4b', endColorstr='#1e1e1e',GradientType=0 ); /* IE6-9 */
+}
+
+/* Navbar list item */
+[class="navbar_item"] ul li {
+	/*padding: 5px 5px;*/
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+/* Navbar list link */
+[class="navbar_item"] ul li a {
+	text-decoration: underline;
+    padding: 5px 8px;
+    color: inherit;
+    display: block;
+}
+
+/* Login link ------------------------- */
+[class="loginbutton"] a {
+    text-align: center;
+    padding: 3px 10px;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+/* Gotta love mobile... >_> ------------------------------------------------- */
+@media screen and (max-width: 537px){
+    [class="metaitem"], [class="loginbutton"] {
+        float: none;
+        vertical-align: top;
+        display: table-cell;
+    }
+    
+    [id=heartribbon], [id=ribbon_placeholder] {
+    	display: none;
+    }
+    
+    [id=meta_container] {
+    	display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+    
+    [id="mobile_ribbon"] {
+    	display: block;
+    }
+    
+    [id="navbar_inner"] {
+    	padding-left: 0px;
+    }
+}
+
+</style>
+
+<div id="mobile_ribbon">
+	<div class="ribbonblue" id="rbleft"></div>
+    <img id="mobilelogo" src="https://raw.githubusercontent.com/xaresys/xaresys.github.io/master/HeartStyle/mini%20logo.png"></img>
+    <div class="ribbonblue" id="rbright"></div>
+</div>
+
+<div id="new_metabar" metabar="regular">
+	<ul id="meta_container">
+    	<!--<li style="position: absolute;"><img src="https://www.homeschool-life.com/tx/heart/websitegrafix/Join-Button.png" height="100" width="50"></li>-->
+        <li id="heartribbon">
+        	<img id="ribbon1" src="https://raw.githubusercontent.com/xaresys/xaresys.github.io/master/HeartStyle/logo%20ribbon%201%20small.png"></img>
+            
+            <img id="ribbon2" src="https://github.com/xaresys/xaresys.github.io/blob/master/HeartStyle/logo%20ribbon%202%20small.png?raw=true"></img>
+        </li>
+        <a class="metaitem" id="ribbon_placeholder"></li>
+    	<a class="metaitem" href="#">Join</a>
+    	<a class="metaitem" href="#">FAQ</a>
+        <a class="metaitem" href="#">Contact</a>
+        <a class="metaitem" href="#">Admin</a>
+    	<div class="loginbutton">
+        	<a href="#">Login</a>
+        </div>
+    </ul>
+</div>
+
+<div id="navbar">
+	<div id="navbar_inner">
+    	<li class="navbar_item">
+    		<a href="#">Calendar ▼</a>
+            <ul>
+            	<li><a href="#">test</a></li>
+                <li><a href="#">testy test test</a></li>
+            </ul>
+        </li>
+        
+        <li class="navbar_item">
+    		<a href="#">Events</a>
+        </li>
+        
+        <li class="navbar_item">
+    		<a href="#">Resources ▼</a>
+            <ul>
+            	<li><a href="#">test</a></li>
+                <li><a href="#">testy test test</a></li>
+            </ul>
+        </li>
+        
+        <li class="navbar_item">
+    		<a href="#">The Board</a>
+        </li>
+    </div>
+</div>
+
+https://www.homeschool-life.com/tx/heart/websitegrafix/Join-Button.png
+http://via.placeholder.com/953x100?text=Banner+(953x100)
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $(".navbar_item").click(function () {
+        $('.navbar_item > ul').not($(this).children("ul").toggle()).hide();
+        
+        $('#navbar_inner').children('.navbar_item').each(function () {
+			var navitem = $(this);
+        	var html = navitem.html();
+            
+			if (navitem.children("ul").is(":visible")) {
+                  navitem.html(html.replace("▼", "▲"));
+			} else {
+				navitem.html(html.replace("▲", "▼"));
+			};
+		});
+        
+    });
+});
+</script>
+
+</body>
+</html>
