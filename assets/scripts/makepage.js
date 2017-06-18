@@ -62,6 +62,9 @@ $(document).ready(function() {
 		oldnav = $('div#topNav');
 		oldnav.hide();
 		
+		/* Remove the mobile one */
+		$('#topNav-mobile').remove();
+		
 		/* Create the new one */
 		var metabar = $('div#new_metabar');
 		metabar.after('<div id="navbar"></div>');
