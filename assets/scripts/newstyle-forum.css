@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Merriweather-Regular';
+  src: url(https://raw.githubusercontent.com/xaresys/homeschool-heart/master/assets/Merriweather-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Merriweather-Light';
+  src: url(https://raw.githubusercontent.com/xaresys/homeschool-heart/master/assets/Merriweather-Light.ttf);
+}
+
+/* Main forum */
+
+.forumtablestyle, .subforumtablestyle {
+    outline: #A0A0A0 solid 1px;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+}
+
+.subforumtablestyle tbody .even td,
+.subforumtablestyle tbody .odd td,
+.subforumtablestyle tbody .bg1color td,
+.forumcellstyle {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+	
+    border-left: 1px solid rgba(255, 255, 255, 1);
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    
+    font-family: Merriweather-Light;
+}
+
+.forumcellstyle a, .subforumtablestyle a {
+    font-family: Merriweather-Regular;
+    color: #52789e;
+}
+
+.celldatestyle, .cellnamestyle {
+    font-weight:bold;
+}
+
+.cellnamestyle {
+    color:#52789e;
+    text-decoration:underline;
+}
+
+.forumtopbar {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#acc7e4+0,75a1d2+90,acc7e4+100 */
+	background: #acc7e4; /* Old browsers */
+	background: -moz-linear-gradient(top, #acc7e4 0%, #75a1d2 90%, #acc7e4 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #acc7e4 0%,#75a1d2 90%,#acc7e4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #acc7e4 0%,#75a1d2 90%,#acc7e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#acc7e4', endColorstr='#75a1d2',GradientType=0 ); /* IE6-9 */
+    
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(48, 117, 191, 0.2);
+    vertical-align: middle;
+    font-family: Merriweather;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Sub forum */
+.subforumtablestyle tbody .even td:not(:first-child),
+.subforumtablestyle tbody .odd td:not(:first-child),
+.subforumtablestyle tbody .bg1color .td {
+    font-weight: bold;
+}
+
+/* Post content */
+.postbarwrapper {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#acc7e4+0,75a1d2+90,acc7e4+100 */
+	background: #acc7e4; /* Old browsers */
+	background: -moz-linear-gradient(top, #acc7e4 0%, #75a1d2 90%, #acc7e4 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #acc7e4 0%,#75a1d2 90%,#acc7e4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #acc7e4 0%,#75a1d2 90%,#acc7e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#acc7e4', endColorstr='#75a1d2',GradientType=0 ); /* IE6-9 */
+    overflow:auto;
+}
+
+.postbarname {
+    font-family: Merriweather;
+    float:left;
+    /*display: table-cell;*/
+    font-size: 14px;
+    padding: 5px 5px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    border-right: 1px solid rgba(48, 117, 191, 0.4);
+    /* Pseudo double-border */
+    -webkit-box-shadow: 1px 0px 0px 1px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 1px 0px 0px 1px rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 0px 0px 1px rgba(255, 255, 255, 0.2);
+}
+
+.postbardate {
+    font-family: Merriweather-Regular;
+    float:right;
+    font-size: 12px;
+    padding: 5px 5px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
