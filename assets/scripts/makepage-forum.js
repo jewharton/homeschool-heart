@@ -106,9 +106,9 @@ $(document).ready(function() {
 	
 	if (window.location.pathname == "/506/forum/forum") {
 		doForum1();
-	} else if (window.location.pathname.includes("/member/forum/forum.cfm") === true && window.location.href.includes("threadid") === false) {
+	} else if ((window.location.pathname.indexOf("/member/forum/forum.cfm") > -1) && !(window.location.href.indexOf("threadid") > -1)) {
 		doForum2();
-	} else if (window.location.pathname.includes("/member/forum/forum.cfm") === true && window.location.href.includes("threadid") === true) {
+	} else if ((window.location.pathname.indexOf("/member/forum/forum.cfm") > -1) && (window.location.href.indexOf("threadid") > -1)) {
 		doPosts();
 	};
 });
