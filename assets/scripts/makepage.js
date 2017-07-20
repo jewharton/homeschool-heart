@@ -83,7 +83,8 @@ $(document).ready(function() {
 			$(this).children('a').each(function () {
 				linkwords = $(this).clone().children().remove().end().text();
 				href = $(this).attr("href");
-				if (linkwords.includes("Home") === true) {
+				//if (linkwords.includes("Home") === true) {
+				if (linkwords.indexOf("Home") > -1) {  //Stupid IE!!
 					ishome = true;
 				};
 				//linkwords = linkwords.replace(" » "," ▼");
