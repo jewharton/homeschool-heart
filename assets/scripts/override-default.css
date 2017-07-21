@@ -27,9 +27,11 @@ div.pagecontent.clearfix {
     overflow: hidden;
 }
 
+/*
 div.pagecontent.clearfix div.content {
     overflow: auto;
 }
+*/
 
 
 div#meta {
