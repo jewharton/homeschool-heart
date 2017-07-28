@@ -77,6 +77,20 @@ div.page {
 	background: -webkit-linear-gradient(top, #33799c 0%,#bad6f4 100%) !important; /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #33799c 0%,#bad6f4 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33799c', endColorstr='#bad6f4',GradientType=0 ) !important; /* IE6-9 */
+	
+	/* Striped background */
+	background: repeating-linear-gradient(
+		45deg,
+		transparent,
+		transparent 10px,
+    		rgba(0, 0, 25, 0.1) 10px,
+    		rgba(0, 0, 25, 0.1) 20px
+  		),
+		linear-gradient(
+		to bottom,
+        	#75A1D2,
+            	#3b6fa3
+        ) !important;
 }
 
 div div#loginBox {
