@@ -18,8 +18,8 @@ $(document).ready(function() {
 		var heartribbon = $('#heartribbon');
 		
 		/* Make the actual ribbon */
-		heartribbon.append('<img id="ribbon1" src="https://rawgit.com/xaresys/homeschool-heart/master/assets/logo%20ribbon%201%20long.png"></img>');
-		heartribbon.append('<img id="ribbon2" src="https://rawgit.com/xaresys/homeschool-heart/master/assets/logo%20ribbon%202%20long.png"></img>');
+		heartribbon.append('<img id="ribbon1" src="https://rawgit.com/xaresys/homeschool-heart/master/assets/images/logo%20ribbon%201%20long.png"></img>');
+		heartribbon.append('<img id="ribbon2" src="https://rawgit.com/xaresys/homeschool-heart/master/assets/images/logo%20ribbon%202%20long.png"></img>');
 		metacontainer.append('<a class="metaitem" id="ribbon_placeholder"></li>');
 		
 		/* Make the mobile ribbon */
