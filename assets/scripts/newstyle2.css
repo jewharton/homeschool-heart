@@ -98,27 +98,17 @@ ul[id=meta_container] {
 [class=metaitem] {
     /*display: inline-block;*/
     text-align: center;
-    padding: 3px 1.5%;
+    padding: 0px 3%;
+    border-radius: 10px;
+    margin: 0.2% 0.2%;
     text-decoration: none !important;
     float: left;
-    
-    font-family: Merriweather !important;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
-    border-right: 1px solid rgba(48, 117, 191, 0.3);
-    /*height: inherit;*/
-    
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#acc7e4+0,eaf2f9+90,acc7e4+100 */
-	background: #acc7e4; /* Old browsers */
-	background: -moz-linear-gradient(top, #acc7e4 0%, #eaf2f9 90%, #acc7e4 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #acc7e4 0%,#eaf2f9 90%,#acc7e4 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #acc7e4 0%,#eaf2f9 90%,#acc7e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#acc7e4', endColorstr='#eaf2f9',GradientType=0 ); /* IE6-9 */
-    
-	text-shadow: 1px 1px 2px rgba(255,255,255,1);
-    color: #3b6fa3 !important;
-    /*color: #ffffff;*/
-    
+    font-family: 'Raleway' !important;
+    background: none;
+    font-weight: 600 !important;
+    color: #52789e;
     font-size: 16px;
+    text-transform: uppercase;
 }
 
 [class=metaitem]:active {
