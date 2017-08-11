@@ -209,7 +209,7 @@ a[class=logoutbutton] {
 }
 
 [class=loginbutton]:hover {
-    background: rgba(79, 239, 79, 0.66);
+    background: rgba(79, 239, 79, 0.33);
 }
 
 [class=loginbutton]:active {
