@@ -71,14 +71,6 @@ div .nivoSlider {
 
 div.page {
     display: block !important;
-	/*
-    background: -moz-linear-gradient(top,#eaf2f9 0,#acc7e4 100%)!important;
-    background: -webkit-linear-gradient(top,#eaf2f9 0,#acc7e4 100%)!important;
-    background: linear-gradient(to bottom,#eaf2f9 0,#acc7e4 100%)!important;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaf2f9', endColorstr='#acc7e4', GradientType=0 )!important;
-    background: repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(0,0,96,.1) 10px,rgba(0,0,96,.1) 20px),
-                linear-gradient(to bottom,#eaf2f9,#acc7e4)!important;
-	*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#33799c+0,bad6f4+100 */
 	background: #33799c; /* Old browsers */
 	background: -moz-linear-gradient(top, #33799c 0%, #bad6f4 100%) !important; /* FF3.6-15 */
@@ -96,8 +88,8 @@ div.page {
   		),
 		linear-gradient(
 		to bottom,
-        	#75A1D2,
-            	#3b6fa3
+        	#a4c2e5,
+            	#5a8fc4
         ) !important;
 }
 
