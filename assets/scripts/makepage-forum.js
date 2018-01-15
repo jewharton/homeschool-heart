@@ -130,7 +130,7 @@ $(document).ready(function() {
 			posttopbar.append('<div class="postbardate">' + postdate + ', ' + posttime + (k===0 ? '<span style="font-family:Merriweather;font-size:14px;"> (Latest)</span>' : "") + '</div>');
 			
 			//Migrate over all child links
-			$(infoblock).children('a').appendTo(posttopbar);
+			$(infoblock).children('a').appendTo(posttopbar.children(".postbardate")[0]);
 		});
 	}
 	
