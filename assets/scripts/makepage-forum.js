@@ -5,14 +5,20 @@ String.prototype.insert = function (index, string) {
     return string + this;
 };
 
-String.prototype.nthIndexOf = function(pattern, n) {
-    var i = -1;
-    while (n-- && i++ < this.length) {
-        i = this.indexOf(pattern, i);
-        if (i < 0) break;
+if (!String.prototype.includes) {
+  String.prototype.includes = function(search, start) {
+    'use strict';
+    if (typeof start !== 'number') {
+      start = 0;
     }
-    return i;
-};
+    
+    if (start + search.length > this.length) {
+      return false;
+    } else {
+      return this.indexOf(search, start) !== -1;
+    }
+  };
+}
 
 $(document).ready(function() {
 	
@@ -109,10 +115,10 @@ $(document).ready(function() {
   			.filter(function() {
     				return this.nodeType === 3 && $.trim(this.nodeValue) !== '';	//Only text nodes
   			}).each(function() {
-				if ($(this).html().includes("Posted")) {
-					postdate = $(this).html().slice(7);
-				} else if ($(this).html().includes(":")) {
-					posttime = $(this).html();
+				if (this.nodeValue.includes("Posted")) {
+					postdate = this.nodeValue.slice(7);
+				} else if (this.nodeValue.includes(":")) {
+					posttime = this.nodeValue;
 				}
 			});
 			
