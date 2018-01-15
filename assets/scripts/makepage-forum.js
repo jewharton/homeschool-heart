@@ -12,7 +12,7 @@ String.prototype.nthIndexOf = function(pattern, n) {
         if (i < 0) break;
     }
     return i;
-}
+};
 
 $(document).ready(function() {
 	
@@ -122,6 +122,9 @@ $(document).ready(function() {
 			var posttopbar = $('<div class="postbarwrapper"></div>').insertBefore(postblock);
 			posttopbar.append('<div class="postbarname">'+author+'</div>');
 			posttopbar.append('<div class="postbardate">' + postdate + ', ' + posttime + (k===0 ? '<span style="font-family:Merriweather;font-size:14px;"> (Latest)</span>' : "") + '</div>');
+			
+			//Migrate over all child links
+			$(infoblock).children('a').appendTo(posttopbar);
 		});
 	}
 	
