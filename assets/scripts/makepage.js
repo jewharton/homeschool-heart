@@ -101,7 +101,7 @@ $(document).ready(function() {
 			});
 			if (ishome === true) {return true;};
 			
-			/* New skill acquired! SKill: "appendTo"!!! */
+			/* New skill acquired! Skill: "appendTo"!!! */
 			var thisitem = $('<li class="navbar_item"></li>').appendTo(innernav);
 			var thislink = $('<a href="'+href+'">'+linkwords+'</a>').appendTo(thisitem);
 			var underlist = "";
@@ -126,26 +126,32 @@ $(document).ready(function() {
 		header.append('<div id="headerversebox">"My son, do not forget my teaching, but keep my commands in your heart..." Proverbs 3:1-4</div>'); 
 	};
 	
+	function fixLoginLength() {
+		$('#loginForm').children('input').each(function() {
+			$(this).attr('maxlength','50');
+		});
+	};
+	
 	doTopBar();
 	doNavBar();
 	makeVerse();
+	fixLoginLength();
 	
 	/* Do the dropdown thing */
 	$(".navbar_item").click(function () {
-        $('.navbar_item > ul').not($(this).children("ul").toggle()).hide();
-        
-        $('#navbar_inner').children('.navbar_item').each(function () {
+        	$('.navbar_item > ul').not($(this).children("ul").toggle()).hide();
+        	
+        	$('#navbar_inner').children('.navbar_item').each(function () {
 			var navitem = $(this);
-        	var html = navitem.html();
-            
+        		var html = navitem.html();
+            		
 			if (navitem.children("ul").is(":visible")) {
-                  navitem.html(html.replace("▼", "▲"));
+				navitem.html(html.replace("▼", "▲"));
 			} else {
 				navitem.html(html.replace("▲", "▼"));
 			};
 		});
-        
-    });
+	});
 	
 	/* Dropdown for login */
 	$("div.loginbutton a").click(function () {
