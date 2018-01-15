@@ -132,7 +132,7 @@ $(document).ready(function() {
 			//Migrate over all child links
 			$(infoblock).children('a').each(function() {
 				var elem = posttopbar.children(".postbardate")[0];
-				elem.append("<br>");
+				elem.append("<br></br>");
 				$(this).appendTo(elem);
 			});
 		});
