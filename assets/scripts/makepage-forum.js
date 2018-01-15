@@ -5,6 +5,15 @@ String.prototype.insert = function (index, string) {
     return string + this;
 };
 
+String.prototype.nthIndexOf = function(pattern, n) {
+    var i = -1;
+    while (n-- && i++ < this.length) {
+        i = this.indexOf(pattern, i);
+        if (i < 0) break;
+    }
+    return i;
+}
+
 $(document).ready(function() {
 	
 	var iterspeed = 3; //speed of operation in milliseconds
@@ -92,8 +101,20 @@ $(document).ready(function() {
 			
 			/* Organize the information */
 			var author = infoblock.children('span').first().text();
-			var postdate = infoblock.html().substring(infoblock.html().indexOf('Posted')+7, infoblock.html().lastIndexOf('/')+3);
-			var posttime = infoblock.html().substring(infoblock.html().indexOf(':')-2, infoblock.html().length-1);
+			var postdate = "";
+			var posttime = "";
+			
+			$(infoblock)
+  			.contents()
+  			.filter(function() {
+    				return this.nodeType === 3 && $.trim(this.nodeValue) !== '';	//Only text nodes
+  			}).each(function() {
+				if ($(this).html().includes("Posted")) {
+					postdate = $(this).html().slice(7);
+				} else if ($(this).html().includes(":")) {
+					posttime = $(this).html();
+				}
+			});
 			
 			//We do not need infoblock anymore. Goodbye infoblock. May you be forever not-seen.
 			infoblock.hide();
