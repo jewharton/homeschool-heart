@@ -127,10 +127,14 @@ $(document).ready(function() {
 			
 			var posttopbar = $('<div class="postbarwrapper"></div>').insertBefore(postblock);
 			posttopbar.append('<div class="postbarname">'+author+'</div>');
-			posttopbar.append('<div class="postbardate">' + postdate + ', ' + posttime + (k===0 ? '<span style="font-family:Merriweather;font-size:14px;"> (Latest)</span>' : "") + '</div>');
+			posttopbar.append('<div class="postbardate" style="text-align:right;">' + postdate + ', ' + posttime + (k===0 ? '<span style="font-family:Merriweather;font-size:14px;"> (Latest)</span>' : "") + '</div>');
 			
 			//Migrate over all child links
-			$(infoblock).children('a').appendTo(posttopbar.children(".postbardate")[0]);
+			$(infoblock).children('a').each(function() {
+				var elem = posttopbar.children(".postbardate")[0];
+				elem.append("<br>");
+				this.appendTo(elem);
+			});
 		});
 	}
 	
