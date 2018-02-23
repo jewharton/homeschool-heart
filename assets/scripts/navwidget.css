@@ -1,6 +1,5 @@
 .homeinfobox {
-	padding: 15px 15px;
-    margin: 10px;
+    padding: 15px 15px;
     display: table-cell;
     text-align: center;
     position: relative;
@@ -58,15 +57,28 @@
     padding: 8px 5px;
     font-size: 22px;
     border: none;
-    color: white;
+    color: white !important;
     cursor: pointer;
     font-family: Arial;
+    text-decoration: none;
     
     /* Border */
     border-radius: 2px;
     border-bottom: 3px solid rgba(0, 0, 0, 0.2);
     border-left: 1px solid rgba(0, 0, 0, 0.1);
     border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.homeinfobutton:hover:after {
+	content:'';
+    position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.4);
+    box-sizing: content-box;
 }
 
 .homeinfotext {
@@ -84,10 +96,15 @@
 
 /* Widget type 17 is custom html */
 .widType17 {
-	display: table;
+    display: table;
     table-layout: fixed;
     width: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    margin-bottom: 18px;
+}
+
+.widType17.clearfix:after {
+	content: none !important;
 }
