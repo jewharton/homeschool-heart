@@ -85,7 +85,7 @@
 	margin-right: auto;
 	margin-top: 0;
 	margin-bottom: 18px;
-	font-size: 20px;
+	font-size: 18px;
 	font-family: Arial;
 }
 
@@ -106,4 +106,39 @@
 
 .widType17.clearfix:after {
 	content: none !important;
+}
+
+@media screen and (max-width:600px){
+	.homeinfobox {
+    	display: inline-block;
+        width: 100%;
+        padding-bottom: 0;
+    }
+    
+    .homeinfopic {
+    	float: left;
+        width: auto;
+        height: 50%;
+        padding-right: 6%;
+    }
+    
+	.homeinfospace {
+    	display: inline-block;
+        width: 100px;
+        height: 15px;
+    }
+    
+    .homeinfobutton {
+    	margin-right: 16%;
+        width: 60%;
+        position: absolute;
+        bottom: -7px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .homeinfotext {
+    	padding-bottom: 25px;
+        text-align: left;
+    }
 }
