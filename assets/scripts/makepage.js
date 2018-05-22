@@ -30,7 +30,7 @@ $(document).ready(function() {
 		mobileribbon.append('<div class="ribbonblue" id="rbright"></div>');
 		
 		/* Make the items. Hooray! */
-		$('.topTextLinks').children('li').not("#topBookmark").not(":has(a#loginButton)").not(":has(a[title='Logout'])").each(function () {
+		$('.topTextLinks').children('li').not("#topBookmark").not(":has(a#loginButton)").not(":has(a[title='Logout'])").not(":has(a[title='Join'])").each(function () {
 			/*console.log( $(this).html() );*/
 			
 			var words = $(this).text();
