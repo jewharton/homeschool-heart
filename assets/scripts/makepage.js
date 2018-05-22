@@ -30,7 +30,7 @@ $(document).ready(function() {
 		mobileribbon.append('<div class="ribbonblue" id="rbright"></div>');
 		
 		/* Make the items. Hooray! */
-		$('.topTextLinks').children('li').not("#topBookmark").not(":has(a#loginButton)").not(":has(a[title='Logout'])").not(":has(a[title='Join'])").each(function () {
+		$('.topTextLinks').children('li').not("#topBookmark").not(":has(a#loginButton)").not(":has(a[title='Logout'])").each(function () {
 			/*console.log( $(this).html() );*/
 			
 			var words = $(this).text();
@@ -38,7 +38,7 @@ $(document).ready(function() {
 			
 			/*console.log( $(this).html() );*/
 			
-			metacontainer.append('<a class="metaitem" href="'+href+'">'+words+'</a>');
+			if (words != "Join") metacontainer.append('<a class="metaitem" href="'+href+'">'+words+'</a>');
 		});
 		
 		/* Is there a login button? If so, make a new one */
