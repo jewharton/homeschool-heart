@@ -1,0 +1,144 @@
+.homeinfobox {
+	padding: 15px 15px;
+	display: table-cell;
+	text-align: center;
+	position: relative;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	
+	/* Border */
+	border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	
+	/* Striped BG */
+	background: repeating-linear-gradient(
+  		45deg,
+  		#fefefe,
+  		#fefefe 10px,
+  		#f7f7f7 10px,
+  		#f7f7f7 20px
+	);
+}
+
+.homeinfobox:before {
+	/* Second border */
+	content: " ";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+}
+
+.homeinfospace {
+	height: 10px;
+	width: 20px;
+	display: table-cell;
+}
+
+.homeinfobutton {
+	bottom: -21px;
+	width: 75%;
+	position: absolute;
+	display: block;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	padding: 8px 5px;
+	font-size: 22px;
+	border: none;
+	color: white !important;
+	font-family: Arial;
+	text-decoration: none;
+	
+	/* Border */
+	border-radius: 2px;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.homeinfobutton:hover:after {
+	content:'';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.4);
+	box-sizing: content-box;
+}
+
+.homeinfotext {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 18px;
+	font-size: 18px;
+	font-family: Arial;
+}
+
+.homeinfopic {
+	margin-bottom: 10px;
+}
+
+/* Widget type 17 is custom html */
+.widType17 {
+	display: table !important;
+	table-layout: fixed;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin-bottom: 18px;
+}
+
+.widType17.clearfix:after {
+	content: none !important;
+}
+
+@media screen and (max-width:600px){
+	.homeinfobox {
+    	display: inline-block;
+        width: 100%;
+        padding-bottom: 0;
+    }
+    
+    .homeinfopic {
+    	float: left;
+        width: auto;
+        height: 50%;
+        padding-right: 6%;
+    }
+    
+	.homeinfospace {
+    	display: inline-block;
+        width: 100px;
+        height: 15px;
+    }
+    
+    .homeinfobutton {
+    	margin-right: 16%;
+        width: 60%;
+        position: absolute;
+        bottom: -7px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .homeinfotext {
+    	padding-bottom: 25px;
+        text-align: left;
+    }
+}

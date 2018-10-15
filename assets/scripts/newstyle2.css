@@ -352,7 +352,7 @@ a[class=logoutbutton] {
     display: block;
     padding: 4px 0;
     font-family: 'Raleway' !important;
-    font-size: 12px !important;
+    font-size: 16px !important;
     font-weight: 600 !important;
 }
 
@@ -414,6 +414,24 @@ a[class=logoutbutton] {
 	background: linear-gradient(to bottom,  #52789e 0%,#2d3f51 90%,#6d85a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52789e', endColorstr='#6d85a0',GradientType=0 ); /* IE6-9 */
 }
+
+/* "Welcome, [Name]" thing in the left sidebar --------------- */
+.familytag {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0 0;
+    background-color: white !important;
+    border-left: 10px solid #599be2;
+    border-right: 10px solid #599be2;
+    width: 100%;
+}
+
+.familytag span {
+    color: #787878 !important;
+}
+
+
 
 /* Gotta love mobile... >_> ------------------------------------------------- */
 @media screen and (max-width: 600px){

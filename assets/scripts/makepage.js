@@ -38,7 +38,7 @@ $(document).ready(function() {
 			
 			/*console.log( $(this).html() );*/
 			
-			metacontainer.append('<a class="metaitem" href="'+href+'">'+words+'</a>');
+			if (words != "Join") metacontainer.append('<a class="metaitem" href="'+href+'">'+words+'</a>');
 		});
 		
 		/* Is there a login button? If so, make a new one */
